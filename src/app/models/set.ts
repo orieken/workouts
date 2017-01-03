@@ -1,0 +1,4 @@
+export class Set {
+  weight: number;
+  reps: number;
+}
