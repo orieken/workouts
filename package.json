@@ -6,6 +6,7 @@
   "scripts": {
     "start": "ng serve",
     "lint": "tslint \"src/**/*.ts\"",
+    "predeploy": "npm test && npm run lint",
     "deploy": "ng github-pages:deploy",
     "test": "ng test --single-run=true --browsers=PhantomJS",
     "test:watch": "ng test",
