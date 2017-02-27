@@ -1,11 +1,11 @@
 /* tslint:disable:no-unused-variable */
-import {async, ComponentFixture, TestBed, fakeAsync, tick} from '@angular/core/testing';
-import {By} from '@angular/platform-browser';
-import {DebugElement} from '@angular/core';
+import { async, ComponentFixture, TestBed, fakeAsync, tick } from '@angular/core/testing';
+import { By } from '@angular/platform-browser';
+import { DebugElement } from '@angular/core';
 
-import {ExerciseComponent} from './exercise.component';
-import {ExerciseService} from "../services/exercise/exercise.service";
-import {EXERCISES} from "../services/exercise/mock-exercises";
+import { ExerciseComponent } from './exercise.component';
+import { ExerciseService } from '../services/exercise/exercise.service';
+import { EXERCISES } from '../services/exercise/mock-exercises';
 
 describe('ExerciseComponent', () => {
   let component: ExerciseComponent;

@@ -1,4 +1,4 @@
-import { Exercise } from "./exercise";
+import { Exercise } from './exercise';
 
 export class Workout {
   id: number;
