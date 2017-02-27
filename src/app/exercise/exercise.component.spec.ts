@@ -44,6 +44,6 @@ describe('ExerciseComponent', () => {
     tick();
     fixture.detectChanges();
     let exercises = compiled.querySelectorAll('h2');
-    expect(exercises.length).toEqual(2);
+    expect(exercises.length).toEqual(5);
   }));
 });

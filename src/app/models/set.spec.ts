@@ -1,12 +1,6 @@
-import { Set } from './set';
 
-describe('ExerciseComponent', () => {
-  let set: Set;
+describe('Set Factory Spec', () => {
   beforeEach(() => {
-  });
-
-  it('should create', () => {
-    expect(set).toBeTruthy();
   });
 
 });
