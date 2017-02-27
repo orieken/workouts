@@ -4,6 +4,13 @@
 
 <div id="exercises" *ngFor='let exercise of exercises; let i = index'>
   <div id="exercise_{{i}}">
-    <h2 id="{{exercise.name}}_{{i}}">{{ exercise.name }}</h2>
+    <div>
+    <h2 id="{{exercise.name}}_{{i}}">{{ exercise.name }} - {{exercise.date}}</h2>
+    </div>
+  <div>
+    <div *ngFor='let set of exercise.sets'>
+      weight: {{set.weight}}, reps: {{set.reps}}
+    </div>
+  </div>
   </div>
 </div>
