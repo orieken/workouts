@@ -1,16 +1,13 @@
-<p>
-  exercise works!
-</p>
-
 <div id="exercises" *ngFor='let exercise of exercises; let i = index'>
-  <div id="exercise_{{i}}">
-    <div>
-    <h2 id="{{exercise.name}}_{{i}}">{{ exercise.name }} - {{exercise.date}}</h2>
-    </div>
-  <div>
-    <div *ngFor='let set of exercise.sets'>
-      weight: {{set.weight}}, reps: {{set.reps}}
-    </div>
-  </div>
-  </div>
+  <md-card class="example-card">
+    <md-card-header id="exercise_{{i}}">
+      <md-card-title id="{{exercise.name}}_{{i}}">{{ exercise.date }}</md-card-title>
+      <md-card-subtitle>{{exercise.name}}</md-card-subtitle>
+    </md-card-header>
+    <md-card-content>
+      <div *ngFor='let set of exercise.sets'>
+        weight: {{set.weight}}, reps: {{set.reps}}
+      </div>
+    </md-card-content>
+  </md-card>
 </div>

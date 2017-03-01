@@ -6,6 +6,7 @@ import { DebugElement } from '@angular/core';
 import { ExerciseComponent } from './exercise.component';
 import { ExerciseService } from '../services/exercise/exercise.service';
 import { EXERCISES } from '../services/exercise/mock-exercises';
+import { MaterialModule } from '@angular/material';
 
 describe('ExerciseComponent', () => {
   let component: ExerciseComponent;
@@ -16,7 +17,8 @@ describe('ExerciseComponent', () => {
       declarations: [ExerciseComponent],
       providers: [
         ExerciseService
-      ]
+      ],
+      imports: [MaterialModule]
     })
       .compileComponents();
   }));
@@ -43,7 +45,7 @@ describe('ExerciseComponent', () => {
     component.ngOnInit();
     tick();
     fixture.detectChanges();
-    let exercises = compiled.querySelectorAll('h2');
-    expect(exercises.length).toEqual(5);
+    let exercises = compiled.querySelectorAll('md-card');
+    expect(exercises.length).toEqual(7);
   }));
 });
